@@ -5,7 +5,6 @@ function shadowbox_field_formatter_view(entity_type, entity, field, instance, la
   try {
     var element = {};
     if (!drupalgap_empty(items)) {
-      console.log(JSON.stringify(items));
       $.each(items, function(delta, item){
           element[delta] = {
             theme:'image',
