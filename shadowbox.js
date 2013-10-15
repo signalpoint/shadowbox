@@ -7,8 +7,9 @@ function shadowbox_field_formatter_view(entity_type, entity, field, instance, la
     if (!drupalgap_empty(items)) {
       $.each(items, function(delta, item){
           element[delta] = {
-            theme:'image',
-            path:drupalgap_image_path(item.uri)
+            theme:'image_style',
+            path:item.uri,
+            style_name:display.settings.image_style
           };
       });
     }
